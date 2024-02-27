@@ -5,13 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .profile-photo {
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* This ensures the aspect ratio remains intact */
+        }
+
+        nav {
+            margin-bottom: 20px; /* Add some space below the navigation */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Tushar Yelgulwar </h1>
+    <header>
+        <div class="header-content">
+            <h1>Tushar Yelgulwar</h1>
+        </div>
+    </header>
 
-    <div class="section">
+    <nav>
+        <table>
+            <tr>
+                <td><a href="#summary">Summary</a></td>
+                <td><a href="#education">Education</a></td>
+                <td><a href="#skills">Skills</a></td>
+                <td><a href="#experience">Experience</a></td>
+                <td><a href="#certificates">Certificates</a></td>
+                <td><a href="#hobbies">Hobbies</a></td>
+                <td><a href="#contact">Contact</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <img src="profile-photo.jpg" alt="Tushar Yelgulwar's Profile Photo" class="profile-photo">
+
+    <div id="summary">
+        <h2>Summary</h2>
+        <p>Experienced Data Scientist proficient in data analysis, machine learning, and deep learning. Skilled in developing business intelligence solutions, creating impactful dashboards, and presenting insights to stakeholders. Strong programming skills in Python, SQL, and R. Familiar with various databases, cloud platforms, and BI tools.</p>
+    </div>
+
+    <div id="education">
         <h2>Education</h2>
         <p><strong>NEW JERSEY INSTITUTE OF TECHNOLOGY, New Jersey</strong><br>
             MS Expected August 2024<br>
@@ -21,7 +70,7 @@
             Bachelor of Engineering in Information Technology</p>
     </div>
 
-    <div class="section">
+    <div id="skills">
         <h2>Skills</h2>
         <ul class="skills-list">
             <li class="skills-item">Programming Languages: Python, SQL, R</li>
@@ -33,7 +82,7 @@
         </ul>
     </div>
 
-    <div class="section">
+    <div id="experience">
         <h2>Experience</h2>
         <div class="experience-item">
             <p><strong>IT Genius LLC, Coral Spring, Florida</strong><br>
@@ -48,7 +97,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div id="certificates">
         <h2>Certificates</h2>
         <div class="certificate-item"><span>Big Data (UC San Diego)</span></div>
         <div class="certificate-item"><span>SAS Programmer</span></div>
@@ -59,7 +108,26 @@
         <div class="certificate-item"><span>Natural Language Processing</span></div>
     </div>
 
+    <div id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Video Games</li>
+            <li>Cycling</li>
+            <li>Running</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Phone: +1 (201) 622-8561</p>
+        <p>Email: <a href="mailto:tusharyelgulwar9@gmail.com">tusharyelgulwar9@gmail.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tushar Yelgulwar. All rights reserved.</p>
+    </footer>
 </div>
 
 </body>
 </html>
+
