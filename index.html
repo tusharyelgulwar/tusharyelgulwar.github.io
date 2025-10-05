@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Sahadev Yelgulwar - Senior Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lavender': '#E6E6FA',
+                        'soft-white': '#FAFAFA',
+                        'sky-blue': '#87CEEB',
+                        'pastel-blue': '#B0E0E6',
+                        'soft-purple': '#DDA0DD'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'scale-in': 'scaleIn 0.3s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.95)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #FAFAFA 0%, #E6E6FA 50%, #B0E0E6 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .tech-tag {
+            transition: all 0.2s ease;
+        }
+        .tech-tag:hover {
+            transform: scale(1.05);
+            background-color: #87CEEB;
+        }
+        .social-link {
+            transition: all 0.3s ease;
+        }
+        .social-link:hover {
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .card-hover:hover {
+                transform: translateY(-4px) scale(1.01);
+            }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen font-sans">
+    <!-- Header Section -->
+    <header class="container mx-auto px-6 py-16 text-center animate-fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-4 animate-slide-up">
+                Tushar Sahadev Yelgulwar
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 animate-slide-up" style="animation-delay: 0.2s;">
+                Senior Data Scientist | Building Scalable Analytics Solutions
+            </p>
+            <a href="https://github.com/tusharyelgulwar" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-sky-blue to-pastel-blue text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-scale-in"
+               style="animation-delay: 0.4s;">
+                <i class="fab fa-github mr-3 text-lg"></i>
+                View on GitHub
+            </a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main class="container mx-auto px-6 pb-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 animate-fade-in">
+                Featured Projects
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg card-hover animate-slide-up" style="animation-delay: 0.1s;">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                        <a href="https://github.com/tusharyelgulwar/Logistics-KPI-Dashboard-for-Transportation-Management" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="hover:text-sky-blue transition-colors duration-300">
+                            Logistics KPI Dashboard for Transportation Management
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Designed Power BI dashboards integrating shipment, cost, and route efficiency KPIs for logistics teams.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Power BI</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">SQL Server</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Pandas</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Plotly</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">REST APIs</span>
+                    </div>
+                    <a href="https://github.com/tusharyelgulwar/Logistics-KPI-Dashboard-for-Transportation-Management" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center text-sky-blue hover:text-blue-600 font-medium text-sm transition-colors duration-300">
+                        <i class="fab fa-github mr-2"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg card-hover animate-slide-up" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                        <a href="https://github.com/tusharyelgulwar/Parcel-Data-Analytics-for-Cost-Optimization" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="hover:text-sky-blue transition-colors duration-300">
+                            Parcel Data Analytics for Cost Optimization
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Analyzed medium-to-high volume parcel data to uncover cost inefficiencies and streamline routes.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">PySpark</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">AWS S3</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Tableau</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">SQL</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Pandas</span>
+                    </div>
+                    <a href="https://github.com/tusharyelgulwar/Parcel-Data-Analytics-for-Cost-Optimization" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center text-sky-blue hover:text-blue-600 font-medium text-sm transition-colors duration-300">
+                        <i class="fab fa-github mr-2"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg card-hover animate-slide-up" style="animation-delay: 0.3s;">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                        <a href="https://github.com/tusharyelgulwar/Predictive-Analytics-for-Delivery-Delays" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="hover:text-sky-blue transition-colors duration-300">
+                            Predictive Analytics for Delivery Delays
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Built ML models to predict shipment delays based on weather, route, and vendor data.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Scikit-learn</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">AWS SageMaker</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">NumPy</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Matplotlib</span>
+                    </div>
+                    <a href="https://github.com/tusharyelgulwar/Predictive-Analytics-for-Delivery-Delays" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center text-sky-blue hover:text-blue-600 font-medium text-sm transition-colors duration-300">
+                        <i class="fab fa-github mr-2"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg card-hover animate-slide-up" style="animation-delay: 0.4s;">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                        <a href="https://github.com/tusharyelgulwar/International-Shipping-Performance-Analytics" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="hover:text-sky-blue transition-colors duration-300">
+                            International Shipping Performance Analytics
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Visualized global shipping performance metrics with customs and carrier data integration.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Power BI</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Azure Synapse</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">SQL</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">DAX</span>
+                    </div>
+                    <a href="https://github.com/tusharyelgulwar/International-Shipping-Performance-Analytics" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center text-sky-blue hover:text-blue-600 font-medium text-sm transition-colors duration-300">
+                        <i class="fab fa-github mr-2"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg card-hover animate-slide-up" style="animation-delay: 0.5s;">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                        <a href="https://github.com/tusharyelgulwar/Departmental-KPI-Dashboard-Automation" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="hover:text-sky-blue transition-colors duration-300">
+                            Departmental KPI Dashboard Automation
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Automated data pipelines and reports for departmental KPIs using scheduled Power BI refreshes.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Power BI</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">SQL Server</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Azure Data Factory</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                    </div>
+                    <a href="https://github.com/tusharyelgulwar/Departmental-KPI-Dashboard-Automation" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center text-sky-blue hover:text-blue-600 font-medium text-sm transition-colors duration-300">
+                        <i class="fab fa-github mr-2"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg card-hover animate-slide-up" style="animation-delay: 0.6s;">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                        <a href="https://github.com/tusharyelgulwar/End-to-End-Shipment-Tracking-Dashboard" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="hover:text-sky-blue transition-colors duration-300">
+                            End-to-End Shipment Tracking Dashboard
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Built a real-time dashboard for shipment visibility and anomaly detection across carriers.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">FastAPI</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Plotly Dash</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">PostgreSQL</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Docker</span>
+                    </div>
+                    <a href="https://github.com/tusharyelgulwar/End-to-End-Shipment-Tracking-Dashboard" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center text-sky-blue hover:text-blue-600 font-medium text-sm transition-colors duration-300">
+                        <i class="fab fa-github mr-2"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg card-hover animate-slide-up md:col-span-2 lg:col-span-3" style="animation-delay: 0.7s;">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                        <a href="https://github.com/tusharyelgulwar/Data-Quality-Framework-for-Logistics-Data" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="hover:text-sky-blue transition-colors duration-300">
+                            Data Quality Framework for Logistics Data
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Developed a validation and cleansing framework for logistics datasets ensuring data integrity.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">PySpark</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">Airflow</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">SQL</span>
+                        <span class="tech-tag bg-lavender text-gray-700 px-3 py-1 rounded-full text-xs font-medium">AWS Glue</span>
+                    </div>
+                    <a href="https://github.com/tusharyelgulwar/Data-Quality-Framework-for-Logistics-Data" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center text-sky-blue hover:text-blue-600 font-medium text-sm transition-colors duration-300">
+                        <i class="fab fa-github mr-2"></i>
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container mx-auto px-6 py-12 text-center">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-gray-600 mb-6 animate-fade-in">
+                Crafted with ❤️ by Tushar Yelgulwar
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/tusharyelgulwar" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-link text-gray-600 hover:text-sky-blue text-2xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/tusharyelgulwar" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-link text-gray-600 hover:text-sky-blue text-2xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:tusharyelgulwar@example.com" 
+                   class="social-link text-gray-600 hover:text-sky-blue text-2xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Add smooth scrolling behavior
+        document.documentElement.style.scrollBehavior = 'smooth';
+        
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
